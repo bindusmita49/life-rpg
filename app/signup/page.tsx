@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { AuthCard, AuthForm } from "@/components/auth";
+import { AuthForm } from "@/components/AuthForm";
 
 export const metadata: Metadata = {
   title: "Enlistment Terminal // Signup - Life RPG",
@@ -27,16 +27,9 @@ export default function SignupPage() {
         <span className="text-[#ff00c8] font-semibold">ENLIST // SIGNUP</span>
       </div>
 
-      {/* Terminal Auth Card */}
+      {/* Centered Terminal Auth Card */}
       <div className="relative z-10 w-full max-w-md">
-        <AuthCard
-          title="OPERATIVE ENLISTMENT"
-          subtitle="INITIALIZE NEW PROFILE RECORD ON NEURAL GRID"
-          nodeId="NODE-089 // RECRUIT-GATE"
-          securityLevel="PUBLIC-ONBOARDING"
-        >
-          <AuthForm mode="signup" />
-        </AuthCard>
+        <AuthForm mode="signup" />
       </div>
 
       {/* Footer System Meta */}

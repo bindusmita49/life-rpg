@@ -1,4 +1,5 @@
 export * from "./supabase-client-test";
+export * from "./AuthForm";
 export * from "./auth";
 export * from "./NavBar";
 export * from "./XPBar";

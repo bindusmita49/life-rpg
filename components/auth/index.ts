@@ -1,3 +1,3 @@
 export * from "./auth-card";
-export * from "./auth-form";
+export * from "../AuthForm";
 export * from "./terminal-log";

@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { AuthCard, AuthForm } from "@/components/auth";
+import { AuthForm } from "@/components/AuthForm";
 
 export const metadata: Metadata = {
   title: "Access Terminal // Login - Life RPG",
@@ -27,16 +27,9 @@ export default function LoginPage() {
         <span className="text-[#00fff2] font-semibold">AUTH // LOGIN</span>
       </div>
 
-      {/* Terminal Auth Card */}
+      {/* Centered Terminal Auth Card */}
       <div className="relative z-10 w-full max-w-md">
-        <AuthCard
-          title="ACCESS TERMINAL"
-          subtitle="AUTHENTICATE IDENTITY FOR COMMAND CLEARANCE"
-          nodeId="NODE-077 // SEC-LOGIN"
-          securityLevel="ALPHA-RESTRICTED"
-        >
-          <AuthForm mode="login" />
-        </AuthCard>
+        <AuthForm mode="login" />
       </div>
 
       {/* Footer System Meta */}
